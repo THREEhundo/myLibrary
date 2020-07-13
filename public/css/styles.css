@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #919191;
+  color: white;
+  height: 100vh;
+  font-family: 'Montserrat';
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+  text-transform: uppercase;
+}
+
+button {
+  background: none;
+  border: none;
+  background: rgba(0,0,0,0.09);
+}
+
+table {
+  border-collapse: collapse;
+  border-top-left-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  min-width: 635px;
+}
+
+th {
+  padding: 10px 10px;
+  text-align: center;
+  background: rgba(121, 24, 242, 0.7);
+}
+thead > tr > th:last-child {
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+
+tbody {
+  background: linear-gradient(-68deg, #ac32e4 , #4801ff);
+}
+
+tbody > tr:last-child > td:first-child {
+  border-bottom-left-radius: 10px !important;
+  overflow: hidden !important;
+}
+
+tbody > tr:last-child > td:nth-last-child(2) {
+  border-bottom-right-radius: 10px !important;
+  overflow: hidden !important;
+}
+
+td {
+  text-align: center;
+  padding: 20px;
+}
+
+tbody > tr:hover {
+  background: rgba(57, 0, 128, 0.4);
+}
+
+tr > th {
+  text-transform: uppercase;
+}
+
+tr > button {
+  background: #393939;
+  color: #00ad5f;
+  border-radius: 10px;
+}
+
+form {
+  margin: auto;
+  display: flex;
+  flex-flow: wrap;
+  padding: 10px;
+  padding-right: 37px;
+  border: 1px solid white;
+  width: 305px;
+  min-width: 295px;
+  background-color: #7917f2;
+  border-radius: 15px;
+  justify-content: flex-end;
+}
+
+form > div {
+  margin-bottom: 5px;
+}
+
+form > div:first-child {
+  padding-left: 52px;
+}
+
+form > label {
+  margin-bottom: 5px;
+}
+
+.table-container {
+  min-height: 25vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  background-color: rgba(121, 23, 242, 0.5);
+  top: 0;
+  left: 0;
+}
+
+.deleteBtnCell {
+  padding-left: 2px;
+  padding-top: 0;
+  padding-bottom: 38px;
+  background-color: #919191;
+}
+
+.deleteBtnCell > button {
+  border-radius: 15px;
+  width: 20px;
+  background-color: #7917f2;
+  border: 1px solid #FFFFFF;
+  color: white;
+  font-weight: bolder;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  line-height: 19.5px;
+}
+
+.deleteBtnCell > button:hover {
+  background-color: white;
+  color: #ac32e4;
+  border: 1px solid #7917f2;
+  font-weight: bolder;
+}
+
+.btn {
+  background: transparent;
+  position: relative;
+  margin: 15px;
+  color: white;
+  border: 2px solid #7917f2;
+  font-weight: bold;
+  font-size: 1.75em;
+  text-decoration: none;
+  overflow: hidden;
+  text-transform: uppercase;
+  transition: 1s all ease;
+}
+
+.btn::after {
+  position: absolute;
+  background: #7917f2;
+  content: "";
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transition: all 1s ease;
+}
+
+
+.add-book::after {
+  width: 100%;
+  height: 0%;
+  transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+.add-book:hover::after {
+  height: 550%;
+}
+
+.btn2 {
+  position: relative;
+  margin: auto;
+  margin-top: 10px;
+  margin-left: 75px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.75em;
+  text-decoration: none;
+  overflow: hidden;
+  text-transform: uppercase;
+  transition: 1s ease-in-out;
+  background: #ac32e4;
+}
